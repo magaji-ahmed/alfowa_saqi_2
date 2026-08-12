@@ -27,7 +27,7 @@
             <a class="btn btn-outline" data-contact="instagram" href="#">Instagram</a>
           </div>
         </div>
-        <div class="detail-hero-image ${fabric.heroClass}"><span>${fabric.name}</span></div>
+        <div class="detail-hero-image"><img src="${fabric.image}" alt="${fabric.name} fabric" loading="eager"><span>${fabric.name}</span></div>
       </div>
     </section>
 
@@ -65,7 +65,7 @@
       <div class="container">
         <div class="section-heading"><div><span class="eyebrow">EXAMPLES</span><h2>Finished pieces & texture</h2></div></div>
         <div class="gallery-grid">
-          ${fabric.gallery.map(g => `<div class="gallery-item ${g.className}"><span>${g.label}</span></div>`).join("")}
+          ${fabric.gallery.map(g => `<div class="gallery-item"><img src="${g.image}" alt="${g.label} — ${fabric.name}" loading="lazy"><span>${g.label}</span></div>`).join("")}
         </div>
       </div>
     </section>

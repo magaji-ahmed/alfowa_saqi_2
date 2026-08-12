@@ -64,7 +64,7 @@
 
   const card = (f) => `
     <a class="fabric-card" href="fabric.html?fabric=${encodeURIComponent(f.slug)}">
-      <div class="fabric-image ${f.heroClass}"><span>View fabric</span></div>
+      <div class="fabric-image"><img src="${f.image}" alt="${f.name} fabric" loading="lazy"><span>View fabric</span></div>
       <div class="fabric-card-body">
         <span class="card-index">${String(d.fabrics.indexOf(f) + 1).padStart(2, "0")}</span>
         <h3>${f.name}</h3>

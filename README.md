@@ -56,7 +56,7 @@ Then visit:
 
 ## Images
 
-The visual blocks currently use CSS-generated textile textures so the template works immediately without an image folder.
+The site now uses normal HTML `<img>` elements for fabric photography. Each fabric has an `image` field and each gallery item has an `image` field. Replace those URLs with your own local image paths, for example `assets/fabrics/royal-silk-01.jpg`.
 
 For the real site, replace these texture blocks with actual fabric photography. The easiest route is to add image URLs/paths to each fabric object and update the rendering in `js/site.js` and `js/fabric-page.js`.
 
